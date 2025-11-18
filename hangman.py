@@ -27,7 +27,7 @@ while end:
 
     print_correct()
     print(f"\n{Fore.BLUE}lives: {lives}/10{Style.RESET_ALL}")
-    inp = str(input(f"{Fore.YELLOW}input a letter: {Style.RESET_ALL}"))
+    inp = str(input(f"{Fore.YELLOW}input a letter/word: {Style.RESET_ALL}"))
 
     for i in range(len(word)):
         if inp == word:
@@ -44,7 +44,8 @@ while end:
         i += 1
     if switch == False and end != False:
         lives -= 1
-        print(f"\n{Fore.RED}incorrect word{Style.RESET_ALL}")
+        print(f"\n{Fore.RED}incorrect letter/word{Style.RESET_ALL}")
     if lives <= 0:
         print(f"{Fore.green}ran out of lives :p{Style.RESET_ALL}")
         break
+
